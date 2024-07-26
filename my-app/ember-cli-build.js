@@ -8,6 +8,10 @@ module.exports = function (defaults) {
       extension: 'scss',
       includePaths: ['app/components'],
     },
+    'ember-google-fonts': {
+      fonts: ['Nunito:400,700', 'Dancing Script:400,700'],
+      subsets: ['latin'], // Optionally specify subsets
+    },
   });
 
   return app.toTree();

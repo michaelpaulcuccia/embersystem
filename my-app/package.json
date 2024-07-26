@@ -48,6 +48,7 @@
     "ember-cli-terser": "^4.0.2",
     "ember-data": "~5.3.8",
     "ember-fetch": "^8.1.2",
+    "ember-google-fonts": "^1.0.1",
     "ember-load-initializers": "^2.1.2",
     "ember-modifier": "^4.2.0",
     "ember-page-title": "^8.2.3",
@@ -80,6 +81,8 @@
     "edition": "octane"
   },
   "dependencies": {
-    "boxicons": "^2.1.4"
+    "boxicons": "^2.1.4",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1"
   }
 }
