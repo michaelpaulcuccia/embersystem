@@ -1,3 +1,12 @@
 {{page-title "Home"}}
-<FeaturedItem @brand={{this.model.brand}} />
+<FeaturedItem
+  @brand={{this.model.brand}}
+  @modelType={{this.model.modelType}}
+  @numberOfStrings={{this.model.numberOfStrings}}
+  @isBass={{this.model.isBass}}
+  @stars={{this.model.stars}}
+  @price={{this.model.price}}
+  @addOnAmount={{this.model.addOnAmount}}
+  @images={{this.model.images}}
+/>
 {{outlet}}

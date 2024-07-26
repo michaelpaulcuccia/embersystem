@@ -15,6 +15,13 @@ export default class HomeRoute extends Route {
 
       return {
         brand: data[0].brand,
+        modelType: data[0].modelType,
+        numberOfStrings: data[0].numberOfStrings,
+        isBass: data[0].isBass,
+        stars: data[0].stars,
+        price: data[0].price,
+        addOnAmount: data[0].addOnAmount,
+        images: data[0].images,
       };
     } catch (error) {
       console.error('Failed to fetch instruments:', error);

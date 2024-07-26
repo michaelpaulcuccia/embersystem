@@ -52,11 +52,32 @@
     </div>
   </div>
   <div class="image-and-price-container">
+    <div class="headline">{{@brand}} {{@modelType}}</div>
+    <p>
+      {{@numberOfStrings}}
+      string
+      {{#if @isBass}}
+        bass guitar
+      {{else}}
+        guitar
+      {{/if}}
+    </p>
+    <div class="star-container">
+      <img src="/images/star.svg" alt="Custom SVG Icon" />
+      <img src="/images/star.svg" alt="Custom SVG Icon" />
+      <img src="/images/star.svg" alt="Custom SVG Icon" />
+      <img src="/images/star.svg" alt="Custom SVG Icon" />
+      <img src="/images/half-star.svg" alt="Custom SVG Icon" />
+    </div>
+    <div>
+      <s class="strikeout">${{addNumbers @price @addOnAmount}}</s>
+      <div class="price">${{@price}}</div>
+    </div>
     <img
       src="/images/fender_electric_bass_precision_dakotared.webp"
       alt="Custom SVG Icon"
       class="myImg"
     />
-    <p>{{@brand}}</p>
+    <a class="learn-more" href="/bass">Learn More</a>
   </div>
 </div>

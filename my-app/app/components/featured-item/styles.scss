@@ -11,13 +11,6 @@
   width: 60%;
 }
 
-.image-and-price-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
 .row-item {
   display: flex;
   align-items: center;
@@ -37,4 +30,57 @@
 .myImg {
   height: 394px;
   width: 486px;
+}
+
+.star-image {
+  color: gold;
+}
+
+.image-and-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.headline {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+
+.star-container {
+  margin-bottom: 18px;
+}
+
+.strikeout {
+  color: #999999;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.price {
+  margin: 12px 0;
+  color: #ee2d43;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.learn-more {
+  text-decoration: none;
+  text-align: center;
+  background: #3b7d1a;
+  color: white;
+  padding: 8px 25px;
+  margin-top: 18px;
+  width: 50%;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #316816;
+  }
 }
