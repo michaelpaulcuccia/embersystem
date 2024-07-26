@@ -78,5 +78,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
   }
 }
