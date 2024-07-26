@@ -1,0 +1,40 @@
+.component-wrapper {
+  display: flex;
+  align-content: center;
+  padding: 48px 32px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.image-and-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.row-item {
+  display: flex;
+  align-items: center;
+
+  h4 {
+    margin-left: 12px;
+  }
+}
+
+.sub-text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.myImg {
+  height: 394px;
+  width: 486px;
+}
