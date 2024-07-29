@@ -12,8 +12,10 @@ export default class HomeRoute extends Route {
       }
 
       const data = await response.json();
+      console.log(data[0]._id);
 
       return {
+        id: data[0]._id,
         brand: data[0].brand,
         modelType: data[0].modelType,
         numberOfStrings: data[0].numberOfStrings,
