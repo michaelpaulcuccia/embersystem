@@ -13,6 +13,9 @@ export default class HomeRoute extends Route {
 
       const data = await response.json();
 
+      const arrayMinusFirstItem = data.slice(1);
+      console.log(arrayMinusFirstItem);
+
       return {
         id: data[0]._id,
         brand: data[0].brand,
@@ -23,6 +26,7 @@ export default class HomeRoute extends Route {
         price: data[0].price,
         addOnAmount: data[0].addOnAmount,
         images: data[0].images[0],
+        data: arrayMinusFirstItem,
       };
     } catch (error) {
       console.error('Failed to fetch instruments:', error);

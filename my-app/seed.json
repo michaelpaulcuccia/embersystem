@@ -1,16 +1,50 @@
-{
-  "brand": "Fender",
-  "modelType": "American Professional II Precision Bass",
-  "color": "Olympic White",
-  "electric": true,
-  "isBass": true,
-  "numberOfStrings": 4,
-  "stars": 4.5,
-  "description": "The American Professional II Precision Bass draws from more than sixty years of innovation, inspiration and evolution to meet the demands of today’s working player. The 1963 profile neck now sports smooth rolled fingerboard edges, a “Super-Natural” satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. ",
-  "price": "1849.99",
-  "addOn": false,
-  "addOnAmount": 0,
-  "numberAvailable": 2,
-  "images": "/images/products/electric/bass/fender_electric_bass_precision_white.webp",
-  "is_featured": false
-}
+[
+  {
+    "brand": "Fender",
+    "modelType": "American Professional II Precision Bass",
+    "color": "Olympic White",
+    "electric": true,
+    "isBass": true,
+    "numberOfStrings": 4,
+    "stars": 4.5,
+    "description": "The American Professional II Precision Bass draws from more than sixty years of innovation, inspiration and evolution to meet the demands of today’s working player. The 1963 profile neck now sports smooth rolled fingerboard edges, a “Super-Natural” satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. ",
+    "price": "1849.99",
+    "addOn": false,
+    "addOnAmount": 0,
+    "numberAvailable": 2,
+    "images": "/images/products/electric/bass/fender_electric_bass_precision_white.webp",
+    "is_featured": false
+  },
+  {
+    "brand": "Reverend",
+    "modelType": "Dub King Semi-hollow Bass Guitar",
+    "color": "Natural",
+    "electric": true,
+    "isBass": true,
+    "numberOfStrings": 4,
+    "stars": 5,
+    "description": "This semi-hollow korina body capped with spruce delivers a punchy sound with far-reaching resonance. Reverend Thick Brick and Split Brick humbuckers conjure everything from hard and heavy bass lines to smooth runs from a single instrument, with a pickup pan control to seamlessly blend your pickup tones. Finally, boutique accents like a Pure Tone jack, 10% pots and poly caps, and Hipshot Ultralite tuners add to the prestige of this show stopper.",
+    "price": "1199.00",
+    "addOn": true,
+    "addOnAmount": 100,
+    "numberAvailable": 1,
+    "images": "/images/products/electric/bass/fender_electric_bass_dubking_natural.webp",
+    "is_featured": false
+  },
+  {
+    "brand": "Silverton",
+    "modelType": "1478",
+    "color": "black",
+    "electric": true,
+    "isBass": false,
+    "numberOfStrings": 6,
+    "stars": 4,
+    "description": "TOriginally offered in 1963, the Silvertone 1478 was an instant favorite. The offset double cutaway body is made of solid Mahogany with a maple top, for a deep rich tone with top end bite. The genuine Bigsby® tremolo and adjustable steel bridge mean faultless intonation and better string attack – an improvement over the rosewood bridge and antiquated tremolo system on the original.",
+    "price": "499.00",
+    "addOn": true,
+    "addOnAmount": 100,
+    "numberAvailable": 3,
+    "images": "/images/products/electric/guitar/silvertone_electric_guitar_1478_black.webp",
+    "is_featured": false
+  }
+]

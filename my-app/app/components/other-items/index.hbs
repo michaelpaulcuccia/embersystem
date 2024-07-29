@@ -1,0 +1,13 @@
+{{yield}}
+
+<div>hello from other items</div>
+<ul>
+  {{#each @data as |item|}}
+    <li>
+      <strong>{{item.brand}}</strong>
+    </li>
+  {{else}}
+    <li>No items found.</li>
+  {{/each}}
+</ul>
+<div>{{@data.brand}}</div>
