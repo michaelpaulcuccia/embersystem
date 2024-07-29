@@ -1,7 +1,50 @@
 @import "navbar/styles";
 @import "featured-item/styles";
+@import "single-item/styles";
 
 body {
   font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+//GLOBAL TEXT STYLES
+.headline {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+
+.sub-text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.strikeout {
+  color: #999999;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.price {
+  margin: 12px 0;
+  color: #ee2d43;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.script {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 24px;
+  padding-right: 8px;
+}
+
+//GLOBAL CLASSES
+
+.star-container {
+  margin-bottom: 18px;
 }

@@ -1,5 +1,6 @@
 import { helper } from '@ember/component/helper';
 import { htmlSafe } from '@ember/template';
+//https://api.emberjs.com/ember/release/functions/@ember%2Ftemplate/htmlSafe
 
 export default helper(function starRating([stars]) {
   let fullStars = Math.floor(stars);

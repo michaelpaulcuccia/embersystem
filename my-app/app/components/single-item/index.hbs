@@ -1,0 +1,39 @@
+{{yield}}
+
+<div class="single-itemRoot">
+  <div class="single-itemFlex">
+    <div class="single-itemImageContainer">
+
+      <img
+        src="/images/fender_electric_bass_precision_dakotared.webp"
+        alt="Custom SVG Icon"
+        class="myImg"
+      />
+    </div>
+
+    <div class="single-itemDescriptionContainer">
+
+      <div class="headline">{{@brand}} {{@modelType}}</div>
+      <p>
+        {{@numberOfStrings}}
+        string
+        {{#if @isBass}}
+          bass guitar
+        {{else}}
+          guitar
+        {{/if}}
+      </p>
+      <div class="star-container">
+        {{starHandler @stars}}
+      </div>
+      <div>
+        <s class="strikeout">${{addNumbers @price @addOnAmount}}</s>
+        <div class="price">${{@price}}</div>
+      </div>
+      <p>{{@numberAvailable}} left in stock!</p>
+      <p class="script">{{@description}}</p>
+    </div>
+
+  </div>
+
+</div>
