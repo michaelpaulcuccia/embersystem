@@ -1,0 +1,16 @@
+{
+  "brand": "Fender",
+  "modelType": "American Professional II Precision Bass",
+  "color": "Olympic White",
+  "electric": true,
+  "isBass": true,
+  "numberOfStrings": 4,
+  "stars": 4.5,
+  "description": "The American Professional II Precision Bass draws from more than sixty years of innovation, inspiration and evolution to meet the demands of today’s working player. The 1963 profile neck now sports smooth rolled fingerboard edges, a “Super-Natural” satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. ",
+  "price": "1849.99",
+  "addOn": false,
+  "addOnAmount": 0,
+  "numberAvailable": 2,
+  "images": "/images/products/electric/bass/fender_electric_bass_precision_white.webp",
+  "is_featured": false
+}

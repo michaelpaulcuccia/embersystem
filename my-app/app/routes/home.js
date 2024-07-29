@@ -12,7 +12,6 @@ export default class HomeRoute extends Route {
       }
 
       const data = await response.json();
-      console.log(data[0].images);
 
       return {
         id: data[0]._id,
