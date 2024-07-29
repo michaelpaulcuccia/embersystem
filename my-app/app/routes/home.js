@@ -19,7 +19,6 @@ export default class HomeRoute extends Route {
         numberOfStrings: data[0].numberOfStrings,
         isBass: data[0].isBass,
         stars: data[0].stars,
-        //stars: 4,
         price: data[0].price,
         addOnAmount: data[0].addOnAmount,
         images: data[0].images,

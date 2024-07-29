@@ -1,36 +1,22 @@
 import { helper } from '@ember/component/helper';
+import { htmlSafe } from '@ember/template';
 
-export function starHandler([stars]) {
-  const obj = {
-    stars: [],
-    hasDecimal: false,
-  };
+export default helper(function starRating([stars]) {
+  let fullStars = Math.floor(stars);
+  let halfStar = stars % 1 !== 0;
 
-  if (stars % 1 === 0.5) {
-    const subtractedNumber = stars - 0.5;
-    let arr = [];
-    let count = subtractedNumber;
-    for (let i = 1; i <= count; i++) {
-      arr.push(i);
-    }
-    obj.hasDecimal = true;
-    obj.stars = arr;
-    console.log(obj);
-  } else {
-    let arr = [];
-    let count = stars;
-    for (let i = 1; i <= count; i++) {
-      arr.push(i);
-    }
-    obj.stars = arr;
+  let fullStarImg = ' <img src="/images/star.svg" alt="Custom SVG Icon" />';
+  let halfStarImg = '<img src="/images/half-star.svg" alt="Custom SVG Icon" />';
+
+  let starHtml = '';
+
+  for (let i = 0; i < fullStars; i++) {
+    starHtml += fullStarImg;
   }
 
-  const img = document.createElement('img');
-  img.src = '/images/star.svg';
-  img.alt = 'Custom SVG Icon';
+  if (halfStar) {
+    starHtml += halfStarImg;
+  }
 
-  return img;
-  //return obj;
-}
-
-export default helper(starHandler);
+  return htmlSafe(starHtml);
+});
