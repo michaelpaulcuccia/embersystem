@@ -16,6 +16,14 @@ body {
   letter-spacing: -0.25px;
 }
 
+.sm-headline {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  max-width: 250px;
+  letter-spacing: -0.25px;
+}
+
 .sub-text {
   font-size: 14px;
   line-height: 14px;
@@ -37,6 +45,21 @@ body {
   font-weight: 700;
 }
 
+.sm-price {
+  margin: 8px 0;
+  color: #ee2d43;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.sm-img {
+  img {
+    width: 335px;
+    height: 265px;
+  }
+}
+
 .script {
   margin-top: 18px;
   font-size: 20px;
@@ -48,4 +71,8 @@ body {
 
 .star-container {
   margin-bottom: 18px;
+}
+
+.sm-star-container {
+  margin-top: 12px;
 }

@@ -1,9 +1,28 @@
 {{yield}}
 
 <div class="other-itemsFlex">
+
   {{#each @data as |item|}}
-    <span>{{item.brand}}</span>
+    <div class="sm-headlineContainer">
+      <div class="sm-headline">
+        {{item.brand}}
+        {{item.modelType}}
+        {{item.color}}
+      </div>
+      <div class="sm-price">
+        {{! TODO: needs conditional }}
+        <s class="strikeout">${{addNumbers item.price item.addOnAmount}}</s>
+        <div class="sm-price">${{item.price}}</div>
+      </div>
+      <div class="sm-img">
+        <img src={{item.images}} alt="Custom SVG Icon" class="myImg" />
+      </div>
+      <div class="sm-star-container">
+        {{starHandler item.stars}}
+      </div>
+    </div>
   {{else}}
     <div>No items found.</div>
   {{/each}}
+
 </div>
