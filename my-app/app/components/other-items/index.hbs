@@ -10,11 +10,14 @@
         {{item.color}}
       </div>
       <div class="sm-price">
-        {{! TODO: needs conditional }}
-        <s class="strikeout">${{addNumbers item.price item.addOnAmount}}</s>
-        <div class="sm-price">${{item.price}}</div>
+        {{#if item.addOn}}
+          <s class="strikeout">${{addNumbers item.price item.addOnAmount}}</s>
+          <div class="sm-price">${{item.price}}</div>
+        {{else}}
+          <div class="sm-price no-top">${{item.price}}</div>
+        {{/if}}
       </div>
-      <div class="sm-img">
+      <div class="single-itemImageContainer">
         <img src={{item.images}} alt="Custom SVG Icon" class="myImg" />
       </div>
       <div class="sm-star-container">

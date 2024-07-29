@@ -2,6 +2,7 @@
 @import "featured-item/styles";
 @import "single-item/styles";
 @import "other-items/styles";
+@import "choose-with-confidence/styles";
 
 body {
   font-family: "Nunito", sans-serif;
@@ -12,6 +13,14 @@ body {
 .headline {
   font-size: 28px;
   line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+
+.chooseText {
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 600;
   letter-spacing: -0.25px;
 }
@@ -51,12 +60,9 @@ body {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-}
 
-.sm-img {
-  img {
-    width: 335px;
-    height: 265px;
+  .no-top {
+    margin: 0;
   }
 }
 
