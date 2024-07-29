@@ -1,13 +1,9 @@
 {{yield}}
 
-<div>hello from other items</div>
-<ul>
+<div class="other-itemsFlex">
   {{#each @data as |item|}}
-    <li>
-      <strong>{{item.brand}}</strong>
-    </li>
+    <span>{{item.brand}}</span>
   {{else}}
-    <li>No items found.</li>
+    <div>No items found.</div>
   {{/each}}
-</ul>
-<div>{{@data.brand}}</div>
+</div>

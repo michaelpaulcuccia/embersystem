@@ -14,7 +14,6 @@ export default class HomeRoute extends Route {
       const data = await response.json();
 
       const arrayMinusFirstItem = data.slice(1);
-      console.log(arrayMinusFirstItem);
 
       return {
         id: data[0]._id,
