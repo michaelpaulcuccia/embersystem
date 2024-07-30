@@ -40,6 +40,15 @@
   }
 }
 
+.navbar-links.no-pad {
+  padding-right: 0;
+  margin-top: 8px;
+
+  &:last-child {
+    margin-bottom: 4px;
+  }
+}
+
 .right-side-links {
   display: flex;
   justify-content: flex-end;

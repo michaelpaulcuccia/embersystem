@@ -6,7 +6,6 @@ export default class OnClickButton extends Component {
   @tracked isMenuVisible = false;
   @action
   handleClick() {
-    console.log('hello');
     this.isMenuVisible = !this.isMenuVisible;
   }
 }

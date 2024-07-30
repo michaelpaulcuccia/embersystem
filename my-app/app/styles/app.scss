@@ -103,3 +103,35 @@ body {
 .sm-star-container {
   margin-top: 12px;
 }
+
+//ONCLICK BUTTON
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.on-click-container {
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.on-click-menu {
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
