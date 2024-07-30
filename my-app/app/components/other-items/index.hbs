@@ -11,7 +11,10 @@
       </div>
       <div class="sm-price">
         {{#if item.addOn}}
-          <s class="strikeout">${{addNumbers item.price item.addOnAmount}}</s>
+          <s class="strikeout small">${{addNumbers
+              item.price
+              item.addOnAmount
+            }}</s>
           <div class="sm-price">${{item.price}}</div>
         {{else}}
           <div class="sm-price no-top">${{item.price}}</div>

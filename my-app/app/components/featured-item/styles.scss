@@ -23,6 +23,12 @@
   }
 }
 
+.center-mobile {
+  @media (max-width: $mobileBreakpoint) {
+    text-align: center;
+  }
+}
+
 .row-item {
   display: flex;
   align-items: center;

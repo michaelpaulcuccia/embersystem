@@ -20,12 +20,20 @@
   left: 20px;
   width: 100%;
   max-width: 2025px;
+
+  @media (max-width: $mobileBreakpoint) {
+    display: none;
+  }
 }
 
 .choose-Flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: $mobileBreakpoint) {
+    display: none;
+  }
 }
 
 .styled-image {
