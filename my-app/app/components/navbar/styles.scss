@@ -22,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
+
+  @media (max-width: $mobileBreakpoint) {
+    display: none;
+  }
 }
 
 .navbar-links {
@@ -50,4 +54,31 @@
     height: 30px;
     width: 30px;
   }
+}
+
+.main-wrapper-mobile {
+  display: none;
+
+  @media (max-width: $mobileBreakpoint) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.image-div,
+.links-div {
+  transition:
+    opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
 }
