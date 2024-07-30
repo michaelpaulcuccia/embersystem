@@ -1,7 +1,15 @@
-.component-wrapper {
+.featuredItem-wrapper {
   display: flex;
   align-content: center;
-  padding: 48px 32px;
+  padding: $desktopComponentPadding;
+  max-width: $desktopContainerMaxWidth;
+  margin: $centeringMargin;
+
+  @media (max-width: $mobileBreakpoint) {
+    flex-direction: column;
+    justify-content: center;
+    padding: $mobileComponentPadding;
+  }
 }
 
 .description-container {
@@ -9,6 +17,10 @@
   flex-direction: column;
   align-items: flex-start;
   width: 60%;
+
+  @media (max-width: $mobileBreakpoint) {
+    width: 100%;
+  }
 }
 
 .row-item {
@@ -22,7 +34,6 @@
 
 .myImg {
   height: 394px;
-  //width: 486px;
 }
 
 .star-image {
@@ -35,6 +46,10 @@
   align-items: center;
   cursor: pointer;
   text-align: center;
+
+  @media (max-width: $mobileBreakpoint) {
+    padding-top: 30px;
+  }
 }
 
 .learn-more {

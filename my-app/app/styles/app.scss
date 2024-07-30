@@ -1,3 +1,4 @@
+@use "variables" as *;
 @import "navbar/styles";
 @import "featured-item/styles";
 @import "single-item/styles";
@@ -7,14 +8,36 @@
 body {
   font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.25px;
 }
 
 //GLOBAL TEXT STYLES
 .headline {
   font-size: 28px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.25px;
+}
+
+.secondary-headline {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -0.25px;
+}
+
+.tertiary-headline {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
+.sub-text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  margin-bottom: 8px;
 }
 
 .chooseText {
@@ -33,13 +56,6 @@ body {
   letter-spacing: -0.25px;
 }
 
-.sub-text {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
 .strikeout {
   color: #999999;
   font-size: 22px;
@@ -49,8 +65,8 @@ body {
 .price {
   margin: 12px 0;
   color: #ee2d43;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 32px;
+  line-height: 32px;
   font-weight: 700;
 }
 
