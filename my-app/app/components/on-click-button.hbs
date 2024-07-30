@@ -1,1 +1,13 @@
-<button {{on "click" this.handleClick}}>Click me</button>
+<div {{on "click" this.handleClick}}>
+  <img src="/images/hamburger.svg" alt="Custom SVG Icon" />
+  {{#if this.isMenuVisible}}
+    <div class="menu">
+      <!-- Menu content goes here -->
+      <ul>
+        <li>Menu Item 1</li>
+        <li>Menu Item 2</li>
+        <li>Menu Item 3</li>
+      </ul>
+    </div>
+  {{/if}}
+</div>
