@@ -1,5 +1,9 @@
 import Component from '@glimmer/component';
+//import { action } from '@ember/object';
 
 export default class NavBar extends Component {
-  // Component logic here
+  // @action
+  // handleClick() {
+  //   console.log('hello');
+  // }
 }
