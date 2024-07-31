@@ -21,3 +21,8 @@ export default helper(function starRating([stars]) {
 
   return htmlSafe(starHtml);
 });
+
+//stars % 1 calculates the remainder when stars is divided by 1.
+//If stars is an integer (like 1, 2, 3, etc.), stars % 1 will be 0 because there is no remainder.
+//If stars has a .5 increment (like 1.5, 2.5, etc.), stars % 1 will be 0.5 because that’s the remainder.
+//stars % 1 !== 0 checks if the remainder is not equal to 0.
